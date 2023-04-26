@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed&family=Bebas+Neue&family=Fjalla+One&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 :root{
     --cor1: #ff914d;
+    --Anton: 'Anton', sans-serif;
+    --barlow: 'Barlow Condensed', sans-serif;
+    --bebas: 'Bebas Neue', cursive;
+    --Fjalla: 'Fjalla One', sans-serif;
 }
 header{
-    width: 100%;
+    width: 100vw;
     height: 150px;
     background-color: var(--cor1);
 }
@@ -30,7 +35,7 @@ nav a{
     text-decoration: none;
 }
 main{
-    width: 100%;
+    width: 100vw;
     height: 1300px;
 }
 #sessao1{
@@ -38,6 +43,7 @@ main{
     height: 350px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
 }
 #imagem1{
     display: flex;
@@ -51,6 +57,7 @@ main{
 #sessao2{
     height: 350px;
     width: 100%;
+    border: 1px solid black;
 }
 #divback{
     width: 92%;
@@ -63,13 +70,48 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin-top: 25px;
+    padding-top: 15px;
     justify-items: center;
     width: 100%;
     height: 350px;
+    border: 1px solid black;
+}
+.icones{
+    display: grid;
+    justify-items: center;
+}
+figcaption{
+    color: #ff914d;
+    font-family: Arial, Helvetica, sans-serif;
 }
 aside{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 350px;
     border: 1px solid black;
+}
+.formulario1{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+}
+textarea{
+    box-sizing: border-box;
+    border: 2px solid var(--cor1);
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+input{
+	border: none;
+	border-bottom: 0.125rem solid var(--cor1);
+	font-size: 1rem;
+	padding-left: 0.875rem;
+	line-height: 100%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
 }
