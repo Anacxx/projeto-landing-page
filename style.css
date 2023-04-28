@@ -11,59 +11,106 @@
     --bebas: 'Bebas Neue', cursive;
     --Fjalla: 'Fjalla One', sans-serif;
 }
+body{
+    font-size: 16px;
+    border: 1px solid black;
+}
 header{
     width: 100vw;
-    height: 150px;
     background-color: var(--cor1);
+    border: 1px solid black;
 }
-header > img{
-    height: 100%;
+.headerdiv{
+    display: flex;
+    align-items: center;
+}
+.headerdiv img{
+    height: 180px;
+    width: 180px;
     display: block;
     margin: auto;
 }
-nav{
+.navPrincipal{
     display: flex;
     gap: 3%;
     justify-content: center;
-    width: 100%;
-    padding: 15px;
+    padding: 1rem;
     background-color: #ff914d;
+
 }
-nav a{
+.navPrincipal a{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: white;
     text-decoration: none;
+    font-size: 1.3rem;
+}
+.navCel{
+    display: none;
+}
+.navCel a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6rem;  
+}
+.iconemenu{
+    border: none;
+    background-color: #ff914d;
+    display: none;
+    padding-right: 1rem;
+}
+.iconemenu img{
+    width: 40px;
+    height: 40px;
 }
 main{
     width: 100vw;
-    height: 1500px;
+    border: 1px solid black;
 }
 #sessao1{
-    width: 100%;
-    height: 350px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    border: 1px solid black;
 }
 .titulo{
     font-family: var(--bebas);
     color: #ff914d;
     font-size: 2rem;
-    line-height: 50px;
+    line-height: 2rem;
+}
+#g{
+    width: 100%;
+    height: auto;
 }
 .titulo2{
     font-family: var(--bebas);
     color: whitesmoke;
     font-size: 2rem;
+    
 }
 .paragrafos{
     font-family: var(--Fjalla);
     color: #424041;
     line-height: 150%;
+    font-size: 1.2rem;
 }
 #imagem1{
     display: flex;
     justify-content: center;
+    align-self: end;
+}
+#imagem1 > img{
+    height: 100%;
 }
 #primeiropar{
     display: flex;
@@ -74,7 +121,7 @@ main{
 #sessao2{
     display: flex;
     align-items: center;
-    height: 350px;
+    flex-grow: 1;
     width: 100%;
     background-color: #ff914d;
     background-image: url('imagens/fundo.png');
@@ -82,15 +129,17 @@ main{
     background-size: cover;
     border-radius: 15px;
     margin: auto;
+    border: 1px solid black;
 }
 #divback{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding-left: 10px;
+    padding-left: 0.7em;
     width: 50%;
     height: 100%;
+    border: 1px solid black;
 }
 .legenda{
     font-family: var(--Fjalla);
@@ -101,39 +150,38 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding-top: 15px;
+    padding-top: 1rem;
     justify-items: center;
     width: 100%;
-    height: 350px;
-
+    border: 1px solid black;
 }
-button{
+.botao1{
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 1rem 2rem;
     font-family: var(--Fjalla);
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.151), 0 6px 20px 0 rgba(0, 0, 0, 0.13);
+    font-size: 1rem;
+    margin: 0.25rem 0.2px;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.151), 0 0.6rem 1.4rem 0 rgba(0, 0, 0, 0.13);
 }
-.bla{
+.botao{
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 12px 28px;
+    padding: 0.9rem 1.8rem;
     text-align: center;
     text-decoration: none;
     font-family: var(--Fjalla);
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.151), 0 6px 20px 0 rgba(0, 0, 0, 0.13);
+    font-size: 1rem;
+    margin: 0.25rem 2px;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.151), 0 0.6rem 1.4rem 0 rgba(0, 0, 0, 0.13);
 }
 .icones{
     display: grid;
@@ -144,12 +192,11 @@ figcaption{
     font-family: Arial, Helvetica, sans-serif;
 }
 aside{
-    padding: 15px 0px;
+    padding: 1rem 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 370px;
 
 }
 .formulario1{
@@ -163,7 +210,7 @@ textarea{
     border: 2px solid var(--cor1);
     border-radius: 4px;
     background-color: #f8f8f8;
-    font-size: 16px;
+    font-size: 1rem;
     resize: none;
 }
 label{
@@ -181,11 +228,44 @@ input{
     border-radius: 12px;
 }
 footer{
+    width: 100vw;
     padding: 15px 0px;
-    height: 100px;
     text-align: center;
     background-color: rgb(255, 255, 255);
+    border: 1px solid black;
 }
 .paragrafoFooter{
     font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 450px){
+    .navPrincipal{
+        display: none;
+    }
+    .iconemenu{
+        display: block;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .open{
+        display: block;
+    }
+}
+@media screen and (max-width: 550px) {
+    #sessao1{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    #imagem1{
+        display: flex;
+        align-self: center;
+    }
+    #sessao2{
+        display: grid;
+        justify-items: center;
+
+    }
+    #divback{
+        width:80%;
+    }
 }

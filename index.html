@@ -4,33 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src=""></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>f4bank</title>
 </head>
 <body>
     <header>
-        <img src="imagens/f4bank.png" alt="logof4bank">
+        <div class="headerdiv">
+            <img src="imagens/f4bank.png" alt="logof4bank">
+            <div>
+                <button onclick="aparecerMenu()" class="iconemenu"><img src="imagens/menucerto.png" alt=""></button>
+            </div>
+        </div>
+        <nav class="navCel">
+            <a href="#">Início</a>
+            <a href="#">Investir</a>
+            <a href="#">Empréstimo</a>
+            <a href="#">Para você</a>
+            <a href="#">Para sua empresa</a>
+            <a href="#">Contato</a>
+        </nav>
+
+        <nav class="navPrincipal">
+            <a href="#">Início</a>
+            <a href="#">Investir</a>
+            <a href="#">Empréstimo</a>
+            <a href="#">Para você</a>
+            <a href="#">Para sua empresa</a>
+            <a href="#">Contato</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Investir</a>
-        <a href="#">Empréstimo</a>
-        <a href="#">Para você</a>
-        <a href="#">Para sua empresa</a>
-        <a href="#">Contato</a>
-    </nav>
     <main>
         <section id="sessao1">
             <div id="imagem1">
-                <picture>
-                    <img src="imagens/fotoprimeirasessao.png" alt="">  
-                </picture>
+                <img id="g" src="imagens/fotoprimeirasessao.png" alt="">
             </div>
             <div id="primeiropar">
                 <h1 class="titulo">gjajhgiojigjadfg</h1>
                 <p class="paragrafos">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nulla hic animi sit veritatis officia culpa? Tempore illo commodi, magnam quas fugit perspiciatis quibusdam, autem laboriosam vero asperiores sequi blanditiis.</p>
-                <a class='bla'href="#">Abra sua conta</a>
+                <a class='botao'href="#">Abra sua conta</a>
             </div>
         </section>
         <section id="sessao2">
@@ -40,7 +52,7 @@
                 <p class="paragrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nemo eos nam saepe eius minus perferendis sint quaerat atque omnis praesentium maxime suscipit, maiores vero ex laboriosam nobis delectus amet?</p>
                 <label for="cpf"></label>
                 <input placeholder="CPF"type="text" name="cpf" id="cpf">
-                <button type="submit">Solicitar cartão</button>
+                <button class='botao'type="submit">Solicitar cartão</button>
             </div>
         </section>
         <section id="sessao3">
