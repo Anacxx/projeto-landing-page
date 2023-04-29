@@ -17,8 +17,6 @@ body{
 header{
     width: 100vw;
     background-color: var(--cor1);
-    border: 1px solid black;
-
 }
 .headerdiv{
     display: flex;
@@ -40,9 +38,9 @@ header{
 .navPrincipal a{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: min(1.2rem, 3.6vw);
     color: white;
     text-decoration: none;
-    font-size: clamp();
 }
 .navCel{
     display: none;
@@ -94,6 +92,7 @@ main{
     font-family: var(--bebas);
     color: whitesmoke;
     font-size: 2rem;
+    text-shadow: rgba(0, 0, 0, 0.219) 0.1em 0.1em 0.2em
     
 }
 .paragrafos{
@@ -101,6 +100,13 @@ main{
     color: #424041;
     line-height: 150%;
     font-size: 1.2rem;
+}
+.paragrafo3{
+    font-family: var(--Fjalla);
+    color: #424041;
+    line-height: 150%;
+    font-size: 1.2rem;
+    align-self: start;
 }
 #imagem1{
     display: flex;
@@ -181,6 +187,9 @@ main{
     cursor: pointer;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.151), 0 0.6rem 1.4rem 0 rgba(0, 0, 0, 0.13);
 }
+.botao[disabled]{
+    background-color:  #ff914d;
+}
 .icones{
     display: grid;
     justify-items: center;
@@ -256,11 +265,7 @@ footer{
 .paragrafoFooter{
     font-family: Arial, Helvetica, sans-serif;
 }
-@media screen and (max-width: 350px) {
-    .formulario1{
-        width:90%;
-    }
-}
+
 @media screen and (max-width: 400px){
     #sessao3{
         display: grid;
@@ -268,6 +273,10 @@ footer{
     }
     .icones{
         padding: 0.px;
+    }
+
+    .formulario1{
+        width:95%;
     }
 }
 @media screen and (max-width: 450px){
@@ -300,9 +309,6 @@ footer{
         display: flex;
         align-self: center;
     }
-}
-
-@media screen and (max-width: 600px) {
     #sessao2{
         display: grid;
         justify-items: center;
@@ -312,3 +318,4 @@ footer{
         width:80%;
     }
 }
+
