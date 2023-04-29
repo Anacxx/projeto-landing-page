@@ -79,7 +79,7 @@ O enunciado completo está no Sistema de Estudante, na sessão de Projetos https
 
 ## Lista de requisitos
 A sua Landing Page deve conter:
-
+;;;
 - [ ] **Uma seção inicial ou principal:** Esta é a seção que visitantes vêem primeiro quando acessam seu site. 
 	
 - [ ] **Logomarca:** A logomarca fornecida pelo cliente, que deve ser apresentada de forma clara e em um local estratégico da página.	
